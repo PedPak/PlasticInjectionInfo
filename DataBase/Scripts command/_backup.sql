@@ -1,0 +1,1 @@
+backup database Tazrigh to DISK='D:\BackUPDatabase\BK_1395_04_26_4_35.bak' with compression
