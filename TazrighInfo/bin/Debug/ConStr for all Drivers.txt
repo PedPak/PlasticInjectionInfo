@@ -1,0 +1,13 @@
+//---- ACCESS
+Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TazrighDB\Tazrigh.accdb
+
+//--- SQL Server
+Data Source=STUDENT2;Trusted_Connection=Yes;APP=Microsoft® Windows® Operating System;WSID=STUDENT2;DATABASE=Tazrigh;
+
+
+DRIVER=SQL Server Native Client 10.0;SERVER=STUDENT2;Trusted_Connection=Yes;APP=Microsoft® Windows® Operating System;WSID=STUDENT2;DATABASE=Tazrigh;
+
+   // win 7 SQL Express
+DRIVER=SQL Server Native Client 10.0;SERVER=COMPUTER02-PC\SQLEXPRESS;Trusted_Connection=Yes;APP=Microsoft® Windows® Operating System;WSID=COMPUTER02-PC;DATABASE=Tazrigh;
+Data Source=SQL Server Native Client 10.0;SERVER=COMPUTER02-PC\SQLEXPRESS;Trusted_Connection=Yes;APP=Microsoft® Windows® Operating System;WSID=COMPUTER02-PC;DATABASE=Tazrigh;
+//-------

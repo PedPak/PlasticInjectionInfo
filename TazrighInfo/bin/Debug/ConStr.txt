@@ -1,0 +1,1 @@
+Data Source=STUDENT2;Trusted_Connection=Yes;APP=Microsoft® Windows® Operating System;WSID=STUDENT2;DATABASE=Tazrigh;

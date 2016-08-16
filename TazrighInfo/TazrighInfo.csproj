@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{718C15E0-68CB-4175-A3B1-BCE1E1E249A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TazrighInfo</RootNamespace>
+    <AssemblyName>TazrighInfo</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/TazrighInfo/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppVerification">
+      <HintPath>..\..\..\Dll (Class Library)\AppVerification\AppVerification\bin\Debug\AppVerification.dll</HintPath>
+    </Reference>
+    <Reference Include="DateTextBox">
+      <HintPath>..\..\DateTextBox\DateTextBox\bin\Debug\DateTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiDate">
+      <HintPath>..\..\..\Dll (Class Library)\FarsiDate\FarsiDate\bin\Debug\FarsiDate.dll</HintPath>
+    </Reference>
+    <Reference Include="FloatingPointTextBox">
+      <HintPath>..\..\FloatingPointTextBox\FloatingPointTextBox\bin\Debug\FloatingPointTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="IntegerTextBox">
+      <HintPath>..\..\IntegerTextBox\IntegerTextBox\bin\Debug\IntegerTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CastFormat.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCustomerForm.Designer.cs">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCastFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCastFormat.Designer.cs">
+      <DependentUpon>frmAddCastFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCastFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCastFormat.Designer.cs">
+      <DependentUpon>frmEditCastFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMachineAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMachineAdd.Designer.cs">
+      <DependentUpon>frmMachineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMachineEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMachineEdit.Designer.cs">
+      <DependentUpon>frmMachineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMachineSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMachineSearch.Designer.cs">
+      <DependentUpon>frmMachineSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageDatabase.Designer.cs">
+      <DependentUpon>frmManageDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderAdd.Designer.cs">
+      <DependentUpon>frmOrderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderEdit.Designer.cs">
+      <DependentUpon>frmOrderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderSearch.Designer.cs">
+      <DependentUpon>frmOrderSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductAdd.Designer.cs">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductEdit.Designer.cs">
+      <DependentUpon>frmProductEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductionAdd.Designer.cs">
+      <DependentUpon>frmProductionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductionEdit.Designer.cs">
+      <DependentUpon>frmProductionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductionSearch.Designer.cs">
+      <DependentUpon>frmProductionSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductSearch.Designer.cs">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchCastFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCastFormat.Designer.cs">
+      <DependentUpon>frmSearchCastFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruncateTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruncateTables.Designer.cs">
+      <DependentUpon>frmTruncateTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPass.Designer.cs">
+      <DependentUpon>frmUserPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machine.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Production.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TazrighCustomerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TazrighCustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TazrighDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TazrighDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsersC.cs" />
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCustomerForm.resx">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCastFormat.resx">
+      <DependentUpon>frmAddCastFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCastFormat.resx">
+      <DependentUpon>frmEditCastFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMachineAdd.resx">
+      <DependentUpon>frmMachineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMachineEdit.resx">
+      <DependentUpon>frmMachineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMachineSearch.resx">
+      <DependentUpon>frmMachineSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageDatabase.resx">
+      <DependentUpon>frmManageDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderAdd.resx">
+      <DependentUpon>frmOrderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderEdit.resx">
+      <DependentUpon>frmOrderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderSearch.resx">
+      <DependentUpon>frmOrderSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductAdd.resx">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductEdit.resx">
+      <DependentUpon>frmProductEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductionAdd.resx">
+      <DependentUpon>frmProductionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductionEdit.resx">
+      <DependentUpon>frmProductionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductionSearch.resx">
+      <DependentUpon>frmProductionSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductSearch.resx">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCastFormat.resx">
+      <DependentUpon>frmSearchCastFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruncateTables.resx">
+      <DependentUpon>frmTruncateTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPass.resx">
+      <DependentUpon>frmUserPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TazrighCustomerDataSet.xsc">
+      <DependentUpon>TazrighCustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TazrighCustomerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TazrighCustomerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TazrighCustomerDataSet.xss">
+      <DependentUpon>TazrighCustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TazrighDataSet.xsc">
+      <DependentUpon>TazrighDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TazrighDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TazrighDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TazrighDataSet.xss">
+      <DependentUpon>TazrighDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tazrigh.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
