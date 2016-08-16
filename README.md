@@ -4,7 +4,7 @@ this is a very simple application to manage the technical information which is u
 attributes:
 C# is its PLanguage and is designed in VS2010.
 
-Requirement:
+Requirements:
 windows
 .Net framework 2.0
 DBMS. (SQL Server)
